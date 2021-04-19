@@ -1,0 +1,45 @@
+header.header {
+	height: 70px;
+	display: flex;
+    padding: 0 10px;
+    background: #72cf9d;
+    font-size: 15px;
+
+}
+
+.container {
+	display: contents;
+}
+
+.title {
+	margin-left: 40px
+}
+
+.title h1 {
+	font-size: 30px;
+}
+
+.main-menu {
+	width: 450px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 450px;
+}
+
+button {
+	height: 35px;
+	background: #004aad;
+	color: white;
+	width: 100px;
+	border-radius: 7px;
+	border: 0;
+}
+
+.login {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	margin-left: 80px;
+	
+}

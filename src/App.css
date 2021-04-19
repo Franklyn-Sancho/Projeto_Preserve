@@ -1,0 +1,22 @@
+.App {
+	height: 650px;
+	background-color: #eaf4dc;
+}
+
+
+
+header.header {
+    grid-area: header;
+}
+
+aside.menu {
+    grid-area: menu;
+}
+
+main.main {
+    grid-area: main;
+}
+
+footer.footer {
+    grid-area: footer;
+}
