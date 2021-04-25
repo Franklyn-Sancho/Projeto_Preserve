@@ -7,7 +7,7 @@ main.main {
 	padding: 45px;
 	margin: 30px;
 	width: 50%;
-	max-width: 550px;
+	max-width: 580px;
 	text-align: center;
 }
 
@@ -40,7 +40,7 @@ main.main {
 }
 
 .main input {
-	width: 400px;
+	width: 380px;
 	margin-left: 27px;
 }
 
@@ -62,4 +62,9 @@ main.main {
 	display: flex;
 	position: relative;
 	bottom: 20px;
+	margin-left: 25px;
+}
+
+.inf p {
+	padding: 0 25px;
 }
