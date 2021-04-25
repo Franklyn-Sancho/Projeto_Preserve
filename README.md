@@ -6,3 +6,5 @@ AInda está em fase de desenvolvimento, então não tem tanta informação sobre
 alguma novidade surgir. 
 
 <img src="https://github.com/Franklyn-Sancho/Projeto_Preserve/blob/main/NomeProjeto.png">
+
+EM CONSTRUÇÃO
