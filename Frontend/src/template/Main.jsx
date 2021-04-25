@@ -6,10 +6,12 @@ import { Link } from 'react-router-dom'
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props =>
+function Main() {
 
+	
+	return(
 	<React.Fragment>
-		<Header  {...props}/>
+		<Header />
 			<main className="main">
 				<div className="container">
 			
@@ -32,9 +34,14 @@ export default props =>
 				</Link>
 			</form>
 			<div className="inf">
-				<p>Taxonomia Preservação Organizações</p>
+				<p>Taxonomia</p> 
+				<p>Preservação</p> 
+				<p>Organizações</p>
 			</div>
 		</div>
 	</main>
 </React.Fragment>
 
+		)}
+
+export default Main

@@ -2,8 +2,11 @@ import React from 'react'
 import '../styles/Header.css'
 import { Link } from 'react-router-dom'
 
+
 // eslint-disable-next-line import/no-anonymous-default-export
-export default props =>
+function Header() {
+
+	return(
 
 	<header className="header">
 		<div className="container">
@@ -29,3 +32,7 @@ export default props =>
 			</div>
 		</div>
 	</header>
+
+	)}
+
+export default Header
