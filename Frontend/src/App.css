@@ -6,4 +6,9 @@
 	background-color: #eaf4dc;
 }
 
+@media (max-device-width: 600px) {
+	.App {
+		width: 300px;
+	}
+}
 

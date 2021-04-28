@@ -1,57 +1,92 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/Seja.css'
 import Header from './Header'
+import axios from 'axios'
 
 
-// eslint-disable-next-line import/no-anonymous-default-export
 function Seja() {
 
-return (
-<React.Fragment>
-	<Header />
+	const [campos, setCampos] = useState({
+		Name: '',
+		Email: '',
+		Password: ''
+	})
 
-    <div className="seja">
-	<div className="signup">
-			<div className="signup-page">
-					<h1>Cadastrar conta</h1>
-						<p>
-							Quase lá! basta preencher o formulário e salvar as espécies
+	function handleInputChange(event) {
+		campos[event.target.name] = event.target.value
+		setCampos(campos)
+	}
+
+	function handleFormSubmit(event) {
+		event.preventDefault()
+		axios.post('http://localhost:3333/seja', campos)
+			.then(response => {
+				alert('cadastro enviado')
+			})
+	}
+
+	return (
+		<React.Fragment>
+			<Header />
+
+			<div className="seja">
+				<div className="signup">
+					<div className="signup-page">
+						<h1>Não abrace só causas, 
+							abrace vidas
+						</h1>
+						<h3>
+							Quase lá! Basta preencher o furmulário 
+							para se tornar um herói
+						</h3>
+						<p>Os animais não se importam se você
+							não usa capa, nao tem armas ou 
+							equipamentos legais
 						</p>
-				</div>
-				<div className="signup-form">
-					<h2>Cadastrar</h2>
-					<form name="dados">
-						<div>
-							<label>Nome</label>
-							<input type="text" name="Name" 
-							placeholder="Husky@dogmail" 
-							id="Name">
-					
-							</input>
-						</div>
-						<div>
-							<label>E-mail</label>
-							<input name="Email" id="email" 
-							placeholder="Husky@dogmail" >
+					</div>
+					<div className="signup-form">
+						<h2>Cadastrar uma conta</h2>
+						<form name="dados" onSubmit={handleFormSubmit}>
+							<div className="input-name">
+								<label></label>
+								<input type="text" name="Name"
+									placeholder="Nome"
+									id="name" onChange={handleInputChange}>
+								</input>
+								<label></label>
+								<input type="text" name="Name"
+									placeholder="Sobrenome"
+									id="Name" onChange={handleInputChange}>
+								</input>
+							</div>
+							<div className="input-password">
+								<label></label>
+								<input name="Email" id="email"
+									placeholder="E-mail"
+									onChange={handleInputChange}>
+								</input>
+								
 							
-							</input>
-						</div>
-						<div>
-							<label>Senha</label>
-							<input name="Password" id="password" 
-							type="password" placeholder="********" >
-							</input>
+								<label></label>
+								<input name="Password" id="password"
+									type="password" placeholder="Senha"
+									onChange={handleInputChange}>
+								</input>
+								<label></label>
+								<input id="date" type="date">
 
-						</div>
-						<button id="submit" type="submit">Cadastrar</button>
-						<button id="submit" type="submit">Login</button>
-					</form>
+								</input>
+
+							</div>
+							<button id="submit" type="submit">Cadastrar</button>
+						</form>
+					</div>
 				</div>
 			</div>
-         </div>
-</React.Fragment>
+		</React.Fragment>
 
-)}
+	)
+}
 
 export default Seja
 

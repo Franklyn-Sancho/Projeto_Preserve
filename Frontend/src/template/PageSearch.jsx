@@ -1,13 +1,26 @@
-import React from 'react'
+
+import React, { Component } from 'react'
 import '../styles/PageSearch.css'
 import Header from './Header'
 
-function PageSearch() {
-    return(
-    <div className="container">
-        <Header/>
-        <h1>Qualquer coisa</h1>
-    </div>
-)}
+
+
+
+class PageSearch extends Component {
+
+    render() {
+
+        return (
+            <React.Fragment>
+                <Header />
+                <div className="page-search">
+                    Qualquer coisa
+            </div>
+            </React.Fragment>
+        )
+    }
+
+}
+
 
 export default PageSearch
