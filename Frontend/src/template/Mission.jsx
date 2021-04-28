@@ -3,19 +3,20 @@ import '../styles/Mission.css'
 import Header from './Header'
 
 function Mission() {
-    return(
+    return (
 
-<React.Fragment>
-    <Header />
-    <div className="page-mission">
-        <div className="titulo">
-        <h1>Nossa Missão</h1>
-        <p>Todas as causas importam</p>
-        </div>
-    </div>
+        <React.Fragment>
+            <Header />
+            <div className="page-mission">
+                <div className="titulo">
+                    <h1>Nossa Missão</h1>
+                    <p>Todas as causas importam</p>
+                </div>
+            </div>
 
-</React.Fragment>
+        </React.Fragment>
 
-    )}
+    )
+}
 
 export default Mission
