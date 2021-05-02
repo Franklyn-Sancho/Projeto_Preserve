@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const Main = styled.div``;
+export const MainStyle = styled.div``;
 
-Main.Main = styled.main`
+MainStyle.Main = styled.main`
   background: #eaf4dc;
   border-radius: 10px;
   padding: 45px;
@@ -12,15 +12,15 @@ Main.Main = styled.main`
   text-align: center;
 `;
 
-Main.Title = styled.div`
+MainStyle.Title = styled.div`
 	margin: 0;
 `;
 
-Main.TitleH1 = styled.h1`
+MainStyle.TitleH1 = styled.h1`
 	font-size: 60px;
 `;
 
-Main.TitleP = styled.p`
+MainStyle.TitleP = styled.p`
 	padding: 0 15px;
 	margin: 0;
 	position: relative;
@@ -28,22 +28,22 @@ Main.TitleP = styled.p`
 	font-size: 18px;
 `; 
 
-Main.P = styled.p`
+MainStyle.P = styled.p`
 	padding: 0 30px;
 `;
 
-Main.Search = styled.input`
+MainStyle.Search = styled.input`
 	display: flex;
 	position: relative;
 	bottom: 10px;
 `;
 
-Main.Input = styled.input`
+MainStyle.Input = styled.input`
 	width: 380px;
 	margin-left: 27px;
 `; 
 
-Main.Button = styled.button`
+MainStyle.Button = styled.button`
     height: 35px;
 	color: white;
 	width: 120px;
@@ -57,13 +57,13 @@ Main.Button = styled.button`
 	}
 `;
 
-Main.Inf = styled.div`
+MainStyle.Information = styled.div`
     display: flex;
 	position: relative;
 	bottom: 20px;
 	margin-left: 25px;
-`;
 
-Main.Inf = styled.p`
-    padding: 0 25px;
-`; 	
+	p {
+		padding: 0 25px;
+	}
+`;

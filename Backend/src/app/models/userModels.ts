@@ -6,14 +6,14 @@ const schema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        min: 4,
-        max: 50 
+        minLength: 4,
+        maxLength: 50 
     },
     email: {
         type: String,
         required: true,
-        min: 4,
-        max: 50
+        minLength: 4,
+        maxLength: 50
     },
     password: {
         type: String,

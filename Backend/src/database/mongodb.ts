@@ -18,7 +18,7 @@ mongoose.connection.on('open', () => {
 })
 
 mongoose.connection.on('error', () => {
-  throw new Error('Could not connect to database.');
+  console.log('Could not connect to database.');
 })
 
 const database = { 
