@@ -1,9 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import '../styles/Header.css'
+import { Link } from 'react-router-dom'
 
-export default function Header() {
+
+// eslint-disable-next-line import/no-anonymous-default-export
+function Header() {
+
 	return (
-		<>
+
 		<header className="header">
 			<div className="container">
 				<div className="title">
@@ -28,6 +32,8 @@ export default function Header() {
 			</div>
 			</div>
 		</header>
-		</>
+
 	)
 }
+
+export default Header

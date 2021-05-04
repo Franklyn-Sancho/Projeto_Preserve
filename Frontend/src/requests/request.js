@@ -1,19 +1,16 @@
-import Api from '../Services/Api';
+import axios from 'axios';
 
-export const getUser = async () => {
-  const response = await Api
-    .get()
-    .then((res) => res.data)
-    .catch((err) => err);
+export const getUser = () => {
+   axios.get()
+    .then(response => response.data)
+    .catch(error => error)
+}
 
-  return response;
-};
+export const postUser = () => {
+    axios.post('/')
+     .then(response => response.data)
+     .catch(error => error)
+}
 
-export const postUser = async (name, email, password) => {
-  const response = Api
-    .post("/seja", { name, email, password })
-    .then((res) => res.data)
-    .catch((err) => err);
 
-  return response;
-};
+// use esses métodos com o useHistory

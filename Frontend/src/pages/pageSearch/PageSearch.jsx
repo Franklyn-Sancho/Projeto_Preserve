@@ -1,15 +1,14 @@
-import React from 'react';
-import { Global } from '../../styles/globalStyle';
-import { Header } from '../../components/index';
+import React from 'react'
+import Header from './Header';
 
 export default function PageSearch() {
     return (
         <>
-            <Global/> 
             <Header />
             <div className="page-search">
                 Qualquer coisa
-            </div>
+        </div>
         </>
-    )
+    )      
+
 }

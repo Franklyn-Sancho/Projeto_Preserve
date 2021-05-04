@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: process.env.LOCALHOST
+    baseURL: 'http://localhost:3333/seja'
 });
 
 export default api;

@@ -1,11 +1,11 @@
-import React from 'react';
-import { Header } from '../../components/index';
-import { Global } from '../../styles/globalStyle';
+import React from 'react'
+import '../styles/Mission.css'
+import Header from './Header'
 
-export default function Mission() {
+function Mission() {
     return (
-        <>
-            <Global/>
+
+        <React.Fragment>
             <Header />
             <div className="page-mission">
                 <div className="titulo">
@@ -13,8 +13,10 @@ export default function Mission() {
                     <p>Todas as causas importam</p>
                 </div>
             </div>
-        </>
+
+        </React.Fragment>
 
     )
 }
 
+export default Mission
