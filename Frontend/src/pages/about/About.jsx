@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/About.css'
+import './About.css'
 import Header from '../../components/header/Header'
 
 export default function About() {

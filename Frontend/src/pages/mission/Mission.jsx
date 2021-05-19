@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/Mission.css'
-import Header from './Header'
+import './Mission.css'
+import Header from '../../components/header/Header'
 
-function Mission() {
+export default function Mission() {
     return (
 
         <React.Fragment>
@@ -19,4 +19,4 @@ function Mission() {
     )
 }
 
-export default Mission
+

@@ -1,13 +1,10 @@
 import React from 'react'
-import '../styles/Main.css'
-import Header from './Header'
+import './Main.css'
+import Header from '../../components/header/Header'
 import { Link } from 'react-router-dom'
 
 
-
-
-// eslint-disable-next-line import/no-anonymous-default-export
-function Main() {
+export default function Main() {
 
 	return (
 		<React.Fragment>
@@ -45,4 +42,3 @@ function Main() {
 	)
 }
 
-export default Main
