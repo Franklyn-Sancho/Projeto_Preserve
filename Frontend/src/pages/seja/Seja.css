@@ -13,8 +13,8 @@
 .signup-page {
     display: block;
     margin: 50px 0;
-    max-width: 800px;
     text-align: center;
+    width: 70%;
 }
 
 .signup-page h1 {
@@ -40,8 +40,7 @@
 .signup-form {
     background: #a4f8ae;
     padding: 40px;
-    width: 50%;
-    max-width: 550px;
+    width: 30%;
     text-align: center;
     height: 465px;
 
@@ -71,6 +70,7 @@
     font-size: 16px;
     line-height: 30px;
     width: 60%;
+    border-radius: 7px;
 }
 
 .input-name input#name {
@@ -84,7 +84,8 @@
     font-size: 16px;
     line-height: 30px;
     width: 95.5%;
-    margin: 0 8px 5%;
+    margin: 0 8px 4%;
+    border-radius: 7px;;
 }
 
 .input-password input#date {
@@ -94,7 +95,7 @@
 
 
 .signup-form div {
-    margin: 0 12px 5%;
+    margin: 0 12px 4%;
 }
 
 .signup-form button {
