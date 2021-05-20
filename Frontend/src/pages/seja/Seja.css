@@ -1,26 +1,21 @@
-
-
-.seja {
-
-    font-family: sans-serif;
-    display: block;
-}
-
 .signup {
     display: flex;
+    justify-content: normal;
 }
 
 .signup-page {
     display: block;
     margin: 50px 0;
+    max-width: 900px;
     text-align: center;
-    width: 70%;
 }
 
 .signup-page h1 {
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     color: #000;
+    font-family: nunito, sans-serif;
+    margin: 50px 50px 0;
     
 
 }
@@ -35,14 +30,16 @@
     color: #000;
     font-size: 20px;
     padding: 0 80px;
+    font-family: nunito;
 }
 
 .signup-form {
     background: #a4f8ae;
     padding: 40px;
     width: 30%;
+    max-width: 550px;
     text-align: center;
-    height: 465px;
+    height: 490px;
 
 }
 
@@ -60,21 +57,23 @@
 
 .input-name {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    border-radius: 5px;
+    position: relative;
+    right: 2px;
 }
 
 .input-name input {
-    display: block;
     padding: 5px;
     border: 1px solid silver;
     font-size: 16px;
     line-height: 30px;
     width: 60%;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .input-name input#name {
-    width: 30%;
+    width: 31%;
 }
 
 .input-password input {
@@ -84,8 +83,7 @@
     font-size: 16px;
     line-height: 30px;
     width: 95.5%;
-    margin: 0 8px 4%;
-    border-radius: 7px;;
+    border-radius: 5px;
 }
 
 .input-password input#date {
@@ -95,19 +93,24 @@
 
 
 .signup-form div {
-    margin: 0 12px 4%;
+    margin: 0 12px 3%;
 }
 
-.signup-form button {
-    background: #6be579;
-    color: #000;
-    padding: 10px 40px;
-    border: 1px solid #ddd;
+
+.button-signup {
+    width: 350px;
+    height: 40px;
+    background: #00c2cb;
+    border: 0;
     border-radius: 5px;
-    font-size: 20px;
-    line-height: 20px;
-    cursor: pointer;
-    margin: 30px;
-    position: absolute;
-    right: 0;
+    font-family: nanito bold;
+}
+
+.button-signup:hover {
+    background-color: #93e8fd;
+}
+
+.errors {
+    font-size: 10px;
+    color: red;
 }
