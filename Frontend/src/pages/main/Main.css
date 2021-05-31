@@ -1,70 +1,41 @@
-
-
-main.main {
-
-	background: #eaf4dc;
-	border-radius: 10px;
-	padding: 45px;
-	margin: 30px;
-	width: 50%;
-	max-width: 580px;
+.main {
+	width: 100vw;
+	height: 100vh;
 	text-align: center;
+	padding-top: 50px;
+	background: linear-gradient(#171717 0%, #2b592b 48%);
+	color: azure;
 }
 
 .title-main {
-	margin: 0;
-
+	padding: 80px;
 }
 
-.title-main h1{
+.title-main h1 {
 	font-size: 60px;
-
 }
 
 .title-main p {
-	padding: 0 15px;
-	margin: 0;
-	position: relative;
-	bottom: 25px;
-	font-size: 18px;
+	width: 600px;
+	margin-left: 60px;
+	padding-top: 10px;
 }
 
-.title p {
-	padding: 0 30px;
-}
-
-.search {
-	display: flex;
-	position: relative;
-	bottom: 10px;
-}
-
-.main input {
-	width: 380px;
-	margin-left: 27px;
-}
-
-.main button {
+.title-main input {
+	width: 420px;
 	height: 35px;
-	color: white;
-	width: 120px;
-	border: 0;
-	border-radius: 0;
-	border: 0;
-	background: #25a422;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+	margin-right: 20px;
 }
 
-.main button:hover {
-	background: #6be579;
+.title-main button {
+	padding-left: 10px;
 }
 
-.inf {
+.info {
 	display: flex;
-	position: relative;
-	bottom: 20px;
-	margin-left: 25px;
-}
-
-.inf p {
-	padding: 0 25px;
+	width: 612px;
+	font-size: 17px;
+	padding-left: 12px;
 }

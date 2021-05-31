@@ -2,7 +2,7 @@ import React from "react";
 import "./Seja.css";
 import Header from "../../components/header/Header";
 import { useForm } from "react-hook-form";
-import axios from 'axios'
+import axios from "axios";
 
 const baseUrl = "http://localhost:3333";
 
@@ -21,110 +21,101 @@ export default function Seja() {
   };
 
   return (
-    <>
+    <div className="container">
       <Header />
-
-      <div className="seja">
-        <div className="signup">
-          <div className="signup-page">
-            <h1>Não abrace só causas, abrace vidas</h1>
-            <p>
-              Hoje, infelizmente, muitas espécies estão 
-              em risco de extinção. Se a gente não se reunir 
-              para fazer alguma coisa, nem que seja espalhar
-              o conhecimento, chegará a um ponto, que o quadro
-              será irreversível. Todos nós, viventes desse mesmo
-              mundo, temos responsabilidades com esta terra. 
-              Temos de lutar pela preservação das espécies, 
-              dos habitats e respeitar a natureza
-            </p>
+      <div className="signup">
+        <div class="row">
+          <div class="col-sm-6">
+            <div className="form-content">
+              <div class="jumbotron" style={{background: 'transparent'}}>
+                <h1 class="display-4">Por que me juntar?</h1>
+                <p class="lead">
+                  O nosso projeto visa ajudar a todos que tem o interesse
+                  de fazer a diferença na vida de diversas espécies
+                  que hoje grita por socorro.
+                </p>
+                <hr class="my-4" />
+                <p>
+                  Clique em saiba mais para saber todas as informações
+                  necessárias
+                </p>
+                <a class="btn btn-dark btn-lg" href="#" role="button">
+                  Leia mais
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="signup-form">
-            <h2>Ainda não tem uma conta? cadastre-se.</h2>
-            <form name="dados" method="post" onSubmit={handleSubmit(onSubmit)}>
-              <div className="input-name">
-                <label></label>
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Nome"
-                  id="name"
-                  {...register("Nome", { required: true })}
-                ></input>
-                <p className="errors">{errors.Nome?.type === "required" && "Nome obrigatório"}</p>
-                <label></label>
-                <input
-                  type="text"
-                  name="Name"
-                  placeholder="Sobrenome"
-                  id="Name"
-                  {...register("Sobrenome", { required: true })}
-                ></input>
-                <p className="errors">
-                  {errors.Sobrenome?.type === "required" &&
-                    "Sobrenome obrigatório"}
-                </p>
-              </div>
-              <div className="input-password">
-                <label></label>
-                <input
-                  name="Email"
-                  id="email"
-                  placeholder="E-mail"
-                  {...register("Email", {
-                    required: true,
-                    pattern: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i,
-                  })}
-                ></input>
-                <p className="errors">
-                  {errors.Email?.type === "pattern" &&
-                    "Informe um email válido"}
-                  {errors.Email?.type === "required" && "Email obrigatório"}
-                </p>
-
-                <label></label>
-                <input
-                  name="Password"
-                  id="password"
-                  type="password"
-                  placeholder="Senha"
-                  {...register("Senha", {
-                    required: true,
-                    pattern: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-                  })}
-                ></input>
-                <p className="errors">
-                  {errors.Senha?.type === "required" &&
-                    "Por favor, digite uma senha"}
-                  {errors.Senha?.type === "pattern" &&
-                    "Digite uma senha mais forte"}
-                </p>
-                <input
-                  name="Password"
-                  id="password"
-                  type="password"
-                  placeholder="Confirmar senha"
-                  {...register("Senha", {
-                    required: true,
-                    pattern: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-                  })}
-                ></input>
-                <p className="errors">
-                  {errors.Senha?.type === "required" &&
-                    "Por favor, digite uma senha"}
-                  {errors.Senha?.type === "pattern" &&
-                    "Digite uma senha mais forte"}
-                </p>
-              </div>
-              <button className="button-signup" type="submit">Cadastrar</button>
-              <div className="question-form">
-                <p>Já é cadastrado?</p>
-                <p>Conheça nossa política</p>
-              </div>
-            </form>
+          <div class="col-sm-6">
+            <div className="sign-form">
+              <h5>
+                Amou o nosso projeto e gostaria de fazer parte da nossa
+                história? então cadastre-se :)
+              </h5>
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Digite seu nome"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Sobrenome</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Digite seu sobrenome"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputAddress"
+                    placeholder="Email@preserve.com"
+                  />
+                  <small id="emailHelp" class="form-text text-muted">
+                    Nunca vamos compartilhar seu email, com ninguém.
+                  </small>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Senha</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="inputAddress2"
+                    placeholder="digite uma senha segura"
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="gridCheck"
+                    />
+                    <label class="form-check-label" for="gridCheck">
+                      Você aceita os nossos termos de privacidade?
+                    </label>
+                    <small id="emailHelp" class="form-text text-muted">
+                      Nunca vamos compartilhar seus dados com ninguém
+                    </small>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success">
+                  Juntar-se <i class="fas fa-heart"></i>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

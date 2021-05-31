@@ -1,116 +1,33 @@
 .signup {
-    display: flex;
-    justify-content: normal;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#171717 0%, #2b592b 48%);
+    color: azure;
+    padding-top: 40px;
 }
 
-.signup-page {
-    display: block;
-    margin: 50px 0;
-    max-width: 900px;
+
+.form-content {
+    padding: 20px;
     text-align: center;
+    align-items: center;
+    padding-top: 60px;
 }
 
-.signup-page h1 {
-    font-size: 70px;
+.sign-form {
+    margin: 20px;
+    padding-top: 40px;
+}
+
+.sign-form h5 {
     text-align: center;
-    color: #000;
-    font-family: nunito, sans-serif;
-    margin: 50px 50px 0;
-    
-
+    width: 450px;
+    margin-left: 80px;
 }
 
-.signup-page h3 {
-    font-size: 30px;
-    padding: 0 45px;
-}
-
-.signup-page p {
-    text-align: center;
-    color: #000;
-    font-size: 20px;
-    padding: 0 80px;
-    font-family: nunito;
-}
-
-.signup-form {
-    background: #a4f8ae;
-    padding: 40px;
-    width: 30%;
-    max-width: 550px;
-    text-align: center;
-    height: 490px;
-
-}
-
-.signup-form h2 {
-    margin: 40px;
-}
-
-.signup-form form {
-    text-align: center;
-}
-
-.signup-form label {
-    display: block;
-}
-
-.input-name {
-    display: flex;
-    justify-content: space-between;
-    border-radius: 5px;
-    position: relative;
-    right: 2px;
-}
-
-.input-name input {
-    padding: 5px;
-    border: 1px solid silver;
-    font-size: 16px;
-    line-height: 30px;
-    width: 60%;
-    border-radius: 5px;
-}
-
-.input-name input#name {
-    width: 31%;
-}
-
-.input-password input {
-    display: block;
-    padding: 5px;
-    border: 1px solid silver;
-    font-size: 16px;
-    line-height: 30px;
-    width: 95.5%;
-    border-radius: 5px;
-}
-
-.input-password input#date {
-    width: 50%;
+.sign-form form {
+    padding-top: 20px;
 }
 
 
 
-.signup-form div {
-    margin: 0 12px 3%;
-}
-
-
-.button-signup {
-    width: 350px;
-    height: 40px;
-    background: #00c2cb;
-    border: 0;
-    border-radius: 5px;
-    font-family: nanito bold;
-}
-
-.button-signup:hover {
-    background-color: #93e8fd;
-}
-
-.errors {
-    font-size: 10px;
-    color: red;
-}
