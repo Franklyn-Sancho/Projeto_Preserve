@@ -5,6 +5,6 @@ Sempre quis trabalhar por uma causa a qual eu acredito. ste projeto está sendo 
 AInda está em fase de desenvolvimento, então não tem tanta informação sobre funcionalidades e etc. Prosseguirei atualizando sempre que 
 alguma novidade surgir. 
 
-<img src="https://github.com/Franklyn-Sancho/Projeto_Preserve/blob/main/NomeProjeto.png">
+<img src="https://github.com/Franklyn-Sancho/Projeto_Preserve/blob/main/main-page-preserve.png">
 
 EM CONSTRUÇÃO
