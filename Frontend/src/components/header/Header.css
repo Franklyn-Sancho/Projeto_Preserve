@@ -1,44 +1,39 @@
 
-header.header {
-	height: 60px;
+.header {
+	width: 100vw;
+	height: 70px;
 	display: flex;
-    padding: 0 10px;
-    background: #baffda;
+
+    background: linear-gradient(90deg, #212121 0%, #215d1f 48%, #26e04f 100%);
     font-size: 15px;
 
 }
 
-.container {
-	display: contents;
-}
 
 .title {
-	margin-left: 40px
+	margin: 15px;
 }
 
 .title h1 {
 	font-size: 30px;
 	display: flex;
 	position: relative;
-	bottom: 7px;
+	color: azure;
 }
 
 .main-menu {
-	width: 400px;
+	width: 600px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-left: 450px;
+	margin-left: 400px;
 }
 
-.header button {
-	height: 32px;
-	background: #baffda;
-	color: #000;
-	width: 100px;
-	border-radius: 6px;
+.main-menu button {
+	background-color: transparent;
+	color: azure;
 	border: 0;
-	font-size: 18px;
+
 }
 
 button.button-signup {
@@ -46,9 +41,7 @@ button.button-signup {
 	margin: 2px;
 }
 
-.header button:hover {
-	background: #93e8fd;
-}
+
 
 .login {
 	width: 300px;
@@ -57,5 +50,6 @@ button.button-signup {
 	align-items: center;
 	font-size: 18px;
 	margin-left: 60px;
+	color: azure;
 	
 }
